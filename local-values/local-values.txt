@@ -1,0 +1,13 @@
+resource "aws_security_group" "sg_01" {
+  name = "app_firewall"
+  tags = {
+    Name = "security-team"
+  }
+}
+
+resource "aws_security_group" "sg_02" {
+  name = "db_firewall"
+  tags = {
+    Name = "security-team"
+  }
+}
