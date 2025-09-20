@@ -1,7 +1,7 @@
-provider "aws" {
-  region = "us-east-1"
-  
+resource "aws_iam_user" "dev" {
+  name = "kplabs-user-01"
 }
+
 resource "aws_security_group" "prod" {
-  name        = "production-sg"
+  name        = "terraform-firewalls"
 }
